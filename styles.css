@@ -1,0 +1,84 @@
+:root {
+  --color-1: rgb(102, 102, 102);
+  --color-2: rgb(205, 205, 205);
+  --color-4: rgb(190, 92, 253);
+  --color-5: rgb(94, 49, 169);
+  --color-3: rgb(0, 196, 140);
+}
+
+body {
+  background-color: black;
+}
+
+#canvas1 {
+  width: 535px;
+  height: 333px;
+  position: absolute;
+  top: 50%;
+  left: 47%;
+  transform: translate(-50%, -50%);
+}
+
+#canvas2 {
+  width: 535px;
+  height: 100px;
+  position: absolute;
+  top: 84%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.snail_name {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 580px;
+  font-size: 50px;
+  margin-top: 70px;
+  font-style: sans-serif;
+  font-weight: 600;
+  background: linear-gradient(
+    240deg,
+    var(--color-1) 19%,
+
+    var(--color-2) 20%,
+    var(--color-2) 39%,
+
+    var(--color-3) 40%,
+    var(--color-3) 59%,
+
+    var(--color-4) 60%,
+    var(--color-4) 79%,
+
+    var(--color-5) 80%
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+.play_btn {
+  position: absolute;
+  left: 50%;
+  top: 78%;
+  font-size: 30px;
+  font-weight: 900;
+  padding: 20px 100px;
+  border: none;
+  transform: translateX(-50%);
+  border-radius: 20px;
+  background-color: var(--color-3);
+  color: white;
+  transition: 0.5s;
+}
+
+.play_btn:hover {
+  cursor: pointer;
+  color: var(--color-4);
+  background-color: var(--color-5);
+}
+
+.play_btn:active {
+  color: white;
+  background-color: var(--color-3);
+}
